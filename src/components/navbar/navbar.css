@@ -1,0 +1,32 @@
+header {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 5vh;
+  margin: auto;
+}
+
+#logo {
+  flex: 2 1 200px;
+  color: #faf8f8;
+  font-size: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 200px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #837150;
+  text-decoration: none;
+}

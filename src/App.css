@@ -6,8 +6,9 @@
 
 body {
   overflow-x: hidden;
+  background-color: #e0d9c8;
 }
 
-header {
-  background-color: aqua;
+.container {
+  padding-top: 5vh;
 }
