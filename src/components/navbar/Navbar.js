@@ -1,11 +1,42 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './navbar.css';
 
 function Navbar() {
+  const [header, setHeader] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = function () {
+      if (window.scrollY > 0) {
+        return setHeader(!header)
+      }
+
+      setHeader(header);
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+
+  }, [])
+
+  let headerScroll = 'scroll';
+  let logoColor = 'logo';
+
+  if (header) {
+    headerScroll += ' changeColor';
+    logoColor += ' logoColor'
+  } else {
+    headerScroll = 'scroll';
+    logoColor = 'logo';
+  }
+
   return (
-    <header>
+    <header className={headerScroll}>
       <nav>
-        <h1 id="logo">LB</h1>
+        <h1 className={logoColor}>LB</h1>
         <ul className="nav-links">
           <li>
             <Link to="/">
@@ -18,13 +49,13 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/gallery">
-              Gallery
+            <Link to="/menu">
+              Menu
             </Link>
           </li>
           <li>
-            <Link to="/about">
-              About
+            <Link to="/gallery">
+              Gallery
             </Link>
           </li>
           <li>

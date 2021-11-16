@@ -10,12 +10,18 @@ nav {
   width: 90%;
   min-height: 5vh;
   margin: auto;
+  padding: 15px 0;
 }
 
-#logo {
+.logo {
   flex: 2 1 200px;
-  color: #faf8f8;
-  font-size: 3rem;
+  color: #e4e3e2;
+  font-size: 2.5rem;
+  font-family: "Great Vibes", cursive;
+}
+
+.logoColor {
+  color: #837150;
 }
 
 .nav-links {
@@ -29,4 +35,14 @@ nav {
 .nav-links a {
   color: #837150;
   text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.scroll {
+  transition: 0.3s linear;
+}
+
+.changeColor {
+  background-color: #e0d9c8;
+  z-index: 2;
 }
