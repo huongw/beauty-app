@@ -3,11 +3,11 @@ import './hero.css';
 function Hero() {
 
   return (
-    <section class="hero">
+    <section className="hero">
       <div className="hero_bg"></div>
-      <div class="welcome">
+      <div className="welcome">
         <h2 id="hero-title">Awaken your inner goddess.</h2>
-        <a href="#" class="btn" id="cta">Book Now</a>
+        <a href="#" className="btn" id="cta">Book Now</a>
       </div>
     </section>
   );

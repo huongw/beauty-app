@@ -1,0 +1,52 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 92vh;
+}
+
+.menu-container h1 {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.menu-container h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 5px;
+  background-color: azure;
+  border-radius: 50%;
+}
+
+caption {
+  font-size: 2.5rem;
+  text-align: left;
+  font-family: "Great Vibes", cursive;
+}
+
+table {
+  width: 90%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+thead tr {
+  text-align: left;
+  color: #837150;
+  font-size: 1.5rem;
+}
+
+.price {
+  text-align: right;
+}
+
+.description {
+  color: #837150;
+}

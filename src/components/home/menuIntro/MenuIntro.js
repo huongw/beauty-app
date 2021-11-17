@@ -7,27 +7,27 @@ import { Link } from 'react-router-dom';
 
 function MenuIntro() {
   return (
-    <section class="menu-section">
+    <section className="menu-section">
       <h2>Our Services</h2>
-      <div class="img-container">
-        <div class="span-titles">
+      <div className="img-container">
+        <div className="span-titles">
           <span>Nails.</span>
           <span>Facials.</span>
           <span>Lashes.</span>
         </div>
 
         <img
-          class="small-img2 menu-stag"
+          className="small-img2 menu-stag"
           src={small_img2}
           alt=""
         />
         <img
-          class="large-img2 menu-stag"
+          className="large-img2 menu-stag"
           src={pink_img}
           alt=""
         />
         <img
-          class="small-img1 menu-stag"
+          className="small-img1 menu-stag"
           src={small_img1}
           alt=""
         />
