@@ -1,0 +1,62 @@
+.contact {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  min-height: 90vh;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-container h1 {
+  font-size: 2rem;
+}
+
+.contact-container p {
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-container .img-container {
+  max-width: 1000px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.contact-container .img-container img {
+  width: 100%;
+}
+
+.girl-sky {
+  transform: translateX(-10%);
+}
+
+.contact-txt {
+  max-width: 600px;
+}
+
+.contact-info {
+  width: 80%;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-container h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+}

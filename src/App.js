@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Navbar, ShopList, ShopPreviewItem, Menu, Home, Gallery, Footer } from './components';
+import { Navbar, ShopList, ShopPreviewItem, Menu, Home, Gallery, Contact, Footer } from './components';
 
 function App() {
 
@@ -14,6 +14,7 @@ function App() {
           <Route path="/shop" exact component={ShopList} />
           <Route path="/menu" component={Menu} />
           <Route path="/gallery" component={Gallery} />
+          <Route path="/contact" component={Contact} />
           <Route path="/shop/:id" component={ShopPreviewItem} />
         </Switch>
         <Footer />

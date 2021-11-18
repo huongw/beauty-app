@@ -7,29 +7,20 @@ footer {
 footer h3 {
   margin-bottom: 20px;
   position: relative;
-  width: 80%;
+  width: 100%;
   text-align: center;
+  padding-top: 20px;
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
 }
 
 footer h3::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 40%;
-  height: 5px;
-  background-color: azure;
-  border-radius: 50%;
-}
-
-footer h3::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 40%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
   height: 5px;
   background-color: azure;
   border-radius: 50%;
@@ -38,7 +29,9 @@ footer h3::after {
 .footer-flex-wrapper {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 90%;
+  max-width: 1500px;
+  margin-bottom: 30px;
 }
 
 .social-links {
@@ -49,16 +42,12 @@ footer h3::after {
   margin: 0 5px;
 }
 
-.social-links,
-.company-links,
-.customer-links {
+.links {
   list-style-type: none;
 }
 
-.social-links a,
-.company-links a,
-.customer-links a {
-  color: #837150;
+.links a {
+  color: #000;
 }
 
 .newsletter {

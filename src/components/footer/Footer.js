@@ -7,9 +7,9 @@ function Footer() {
     <footer>
       <h3 className="footer-title">Luna Beaute</h3>
       <div className="footer-flex-wrapper">
-        <FooterLinks className="company-links" data={formData.company} />
-        <FooterLinks className="social-links" data={formData.social} />
-        <FooterLinks className="customer-links" data={formData.customer} />
+        <FooterLinks className="links" data={formData.company} />
+        <FooterLinks className="links social-links" data={formData.social} />
+        <FooterLinks className="links" data={formData.customer} />
       </div>
       <div className="newsletter">
         <h4>Want to Receive Some Discount Goodies?</h4>
