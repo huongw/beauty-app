@@ -13,7 +13,7 @@ const formData = {
   ],
   customer: [
     "Track Shipping",
-    "Returns & Exchanges",
+    "Returns",
     "Contact Us"
   ]
 }

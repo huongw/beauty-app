@@ -39,7 +39,7 @@ footer h3::before {
 }
 
 .social-links a {
-  margin: 0 5px;
+  margin-right: 5px;
 }
 
 .links {
@@ -54,6 +54,38 @@ footer h3::before {
   text-align: center;
 }
 
+.newsletter form {
+  width: 100%;
+}
+
+.newsletter input {
+  margin-top: 5px;
+  height: 30px;
+}
+
 .copyright {
   font-size: 10px;
+}
+
+.customer-links {
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .links a,
+  .newsletter {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer-flex-wrapper {
+    flex-direction: column;
+  }
+  .customer-links {
+    text-align: left;
+  }
+  .social-links {
+    order: 1;
+  }
 }

@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-flex-wrapper">
         <FooterLinks className="links" data={formData.company} />
         <FooterLinks className="links social-links" data={formData.social} />
-        <FooterLinks className="links" data={formData.customer} />
+        <FooterLinks className="links customer-links" data={formData.customer} />
       </div>
       <div className="newsletter">
         <h4>Want to Receive Some Discount Goodies?</h4>

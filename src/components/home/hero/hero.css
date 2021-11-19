@@ -4,10 +4,18 @@
 }
 
 .welcome {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+}
+
+.cta {
+  background-color: #837150;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 5px 20px;
+  border: 2px solid azure;
 }
 
 .hero_bg {
@@ -20,4 +28,34 @@
 
 #hero-title {
   text-transform: capitalize;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.logo-design {
+  position: relative;
+}
+
+.logo-design::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: azure;
+}
+
+.logo-design::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -40%;
+  transform: translate(50%, -50%);
+  width: 50%;
+  height: 2px;
+  border-radius: 50%;
+  background-color: azure;
 }

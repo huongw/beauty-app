@@ -1,4 +1,5 @@
 import './hero.css';
+import { Link } from 'react-router-dom';
 
 function Hero() {
 
@@ -6,9 +7,16 @@ function Hero() {
     <section className="hero">
       <div className="hero_bg"></div>
       <div className="welcome">
-        <h2 id="hero-title">Awaken your inner goddess.</h2>
-        <a href="#" className="btn" id="cta">Book Now</a>
+        <h2 id="hero-title">
+          <span className="logo logo-design">Luna Beaute</span>
+          <br />
+          Awaken your inner goddess
+        </h2>
+        <Link to="/menu" className="cta">
+          View Menu
+        </Link>
       </div>
+
     </section>
   );
 }

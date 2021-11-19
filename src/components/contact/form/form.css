@@ -4,3 +4,17 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+form button {
+  background-color: #837150;
+  color: azure;
+  outline: none;
+  border: none;
+  padding: 5px 0;
+}
+
+@media only screen and (max-width: 850px) {
+  form {
+    width: 100%;
+  }
+}

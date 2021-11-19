@@ -1,5 +1,5 @@
 .menu-section {
-  padding: 80px 10px;
+  padding: 50px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -9,24 +9,50 @@
 .menu-section h2 {
   font-size: 2rem;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .menu-section .img-container {
-  width: 90%;
+  width: 95%;
   max-width: 1500px;
   display: flex;
   justify-content: center;
   position: relative;
 }
 
+.grey-blob {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  z-index: -1;
+}
+
+.green-blob {
+  position: absolute;
+  bottom: 5%;
+  left: 65%;
+  z-index: -2;
+  transform: scale(-1);
+}
+
 .large-img2 {
   width: 50%;
   max-width: 600px;
+  min-width: 300px;
+}
+
+.small-img1,
+.small-img2 {
+  width: 25%;
+  min-width: 250px;
+  max-width: 300px;
 }
 
 .small-img1 {
-  width: 25%;
-  max-width: 300px;
   align-self: flex-start;
   transform: translate(-10%, 10%);
   position: relative;
@@ -34,8 +60,6 @@
 }
 
 .small-img2 {
-  width: 25%;
-  max-width: 300px;
   align-self: flex-end;
   transform: translate(20%, 10%);
 }
@@ -48,6 +72,7 @@
   border: 2px solid #fff;
   padding: 1vw;
   font-family: "Raleway", sans-serif;
+  z-index: 2;
 }
 
 .span-titles span {
@@ -58,15 +83,72 @@
 
 .menu-desc {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 .menu-desc p {
-  margin: 20px 0;
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
 }
 
 .menu-link {
   color: #837150;
   text-decoration: underline;
+}
+
+.flower {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-section .img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-section h2 {
+    margin-bottom: 0;
+  }
+
+  .small-img1,
+  .small-img2 {
+    align-self: center;
+  }
+
+  .small-img1 {
+    transform: translate(0, -10%);
+    z-index: 1;
+  }
+  .small-img2 {
+    transform: translate(0, 10%);
+  }
+
+  .grey-blob {
+    left: 50%;
+    top: 45%;
+  }
+
+  .green-blob {
+    display: none;
+  }
+
+  .menu-desc {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .small-img1,
+  .small-img2 {
+    min-width: 200px;
+  }
+
+  .large-img2 {
+    min-width: 250px;
+  }
 }

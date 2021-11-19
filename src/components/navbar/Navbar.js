@@ -23,29 +23,21 @@ function Navbar() {
   }, [])
 
   let headerScroll = 'scroll';
-  let logoColor = 'logo';
 
   if (header) {
     headerScroll += ' changeColor';
-    logoColor += ' logoColor'
   } else {
     headerScroll = 'scroll';
-    logoColor = 'logo';
   }
 
   return (
     <header className={headerScroll}>
       <nav>
-        <h1 className={logoColor}>LB</h1>
+        <h1 className="logo">LB</h1>
         <ul className="nav-links">
           <li>
             <Link to="/">
               Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/shop">
-              Shop
             </Link>
           </li>
           <li>
