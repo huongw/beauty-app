@@ -114,6 +114,6 @@
 
 @media only screen and (max-height: 1500px) and (max-width: 1000px) {
   .contact-container {
-    min-height: 90vh;
+    min-height: 95vh;
   }
 }
