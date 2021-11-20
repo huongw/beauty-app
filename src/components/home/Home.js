@@ -1,4 +1,4 @@
-import { Hero, About, MenuIntro } from './index';
+import { Hero, About, MenuIntro, Parallax } from './index';
 
 function Home() {
 
@@ -6,6 +6,7 @@ function Home() {
     <>
       <Hero />
       <About />
+      <Parallax />
       <MenuIntro />
     </>
   );

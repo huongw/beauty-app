@@ -7,13 +7,11 @@
 }
 
 .menu-section h2 {
-  font-size: 2rem;
   margin-bottom: 40px;
   position: relative;
 }
 
 .menu-section .img-container {
-  width: 95%;
   max-width: 1500px;
   display: flex;
   justify-content: center;
@@ -23,11 +21,10 @@
 .grey-blob {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 32%;
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 600px;
-  height: 600px;
   z-index: -1;
 }
 
@@ -40,22 +37,19 @@
 }
 
 .large-img2 {
-  width: 50%;
+  width: 80%;
   max-width: 600px;
-  min-width: 300px;
 }
 
 .small-img1,
 .small-img2 {
-  width: 25%;
-  min-width: 250px;
+  width: 50%;
   max-width: 300px;
 }
 
 .small-img1 {
   align-self: flex-start;
   transform: translate(-10%, 10%);
-  position: relative;
   z-index: -1;
 }
 
@@ -70,7 +64,7 @@
   left: 50%;
   transform: translateX(-50%);
   border: 2px solid #fff;
-  padding: 1vw;
+  padding: clamp(0.5rem, 2vw, 1.5rem);
   font-family: "Raleway", sans-serif;
   z-index: 2;
 }
@@ -78,7 +72,7 @@
 .span-titles span {
   display: block;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 
 .menu-desc {
@@ -121,8 +115,7 @@
   }
 
   .small-img1 {
-    transform: translate(0, -10%);
-    z-index: 1;
+    display: none;
   }
   .small-img2 {
     transform: translate(0, 10%);
@@ -130,7 +123,7 @@
 
   .grey-blob {
     left: 50%;
-    top: 45%;
+    top: 50%;
   }
 
   .green-blob {
@@ -138,7 +131,11 @@
   }
 
   .menu-desc {
-    margin-top: 0;
+    margin-top: 30px;
+  }
+
+  .span-titles {
+    top: 7%;
   }
 }
 

@@ -5,21 +5,21 @@ import './about.css';
 function About() {
 
   return (
-    <section class="intro-section">
+    <section className="intro-section">
       <div className="intro-wrapper">
-        <div class="img-container">
+        <div className="img-container">
           <img
-            class="large-img"
+            className="large-img"
             src={golden_hour}
             alt=""
           />
           <img
-            class="small-img"
+            className="small-img"
             src={tan_girl}
             alt=""
           />
         </div>
-        <div class="intro-txt">
+        <div className="intro-txt">
           <h2>Meet<br />Luna Beaute</h2>
           <p>
             Luna Beaute Spa is the #1 best vegan and organic spa in Montreal, Quebec.

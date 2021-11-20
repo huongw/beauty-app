@@ -9,14 +9,10 @@
 }
 
 .contact-container {
-  min-height: 90vh;
-  margin-bottom: 50px;
+  min-height: 93vh;
+  padding-bottom: 20px;
   display: flex;
   align-items: center;
-}
-
-.contact-container h1 {
-  font-size: 2rem;
 }
 
 .contact-container p {
@@ -53,15 +49,21 @@
 
 .contact-txt {
   max-width: 600px;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-info {
   width: 80%;
-  margin-bottom: 30px;
-  padding-top: 30px;
+  margin-bottom: 10px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+
+.contact-info div {
+  margin-bottom: 10px;
 }
 
 .contact-info::before {
@@ -93,9 +95,6 @@
 }
 
 @media only screen and (max-width: 850px) {
-  .contact-container {
-    min-height: 0;
-  }
   .contact-info {
     width: 100%;
     flex-direction: column;

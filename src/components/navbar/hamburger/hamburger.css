@@ -1,0 +1,80 @@
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 2px;
+  background-color: #e4e3e2;
+  margin: 10px 0;
+}
+
+.line1,
+.line2 {
+  transition: 0.3s linear;
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+  transform: rotate(-45deg) translate(-5px, 2px);
+}
+
+.toggle .line2 {
+  -webkit-transform: rotate(45deg) translate(-5px, -2px);
+  transform: rotate(45deg) translate(-5px, -2px);
+}
+
+.nav-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header nav .nav-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    background-color: #e0d9c8;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    width: 100%;
+  }
+  header nav .nav-links li {
+    opacity: 0;
+  }
+  header nav .nav-links li a {
+    font-size: 1.2rem;
+  }
+  header nav .nav-links li a:hover {
+    color: #79614e;
+  }
+  header nav .nav-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  header nav .hamburger {
+    display: block;
+  }
+}
