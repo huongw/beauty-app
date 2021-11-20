@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Navbar, Menu, Home, Gallery, Contact, Footer } from './components';
 import Preloader from './components/preloader/Preloader';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [])
 
   return (
     <div className="App">
@@ -15,6 +12,7 @@ function App() {
 
       <Router>
         <Navbar />
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/contact" component={Contact} />
