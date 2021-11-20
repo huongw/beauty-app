@@ -6,6 +6,7 @@ import useWindow from './hooks/useWindow';
 import Preloader from './components/preloader/Preloader';
 
 function App() {
+
   useWindow()
 
   return (
