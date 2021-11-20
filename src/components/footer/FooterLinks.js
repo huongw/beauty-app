@@ -4,8 +4,8 @@ function FooterLinks(props) {
 
   const footerLinks = data.map((name, index) => {
     return (
-      <li href="#" key={index}>
-        <a href="#">{name}</a>
+      <li key={index}>
+        <a href="/">{name}</a>
       </li>
     )
   })
