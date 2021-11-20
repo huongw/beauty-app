@@ -18,7 +18,7 @@ function useHeaderData() {
       window.removeEventListener('scroll', handleScroll);
     }
 
-  }, [])
+  })
 
   let headerScroll = 'scroll';
 

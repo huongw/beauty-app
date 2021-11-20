@@ -3,12 +3,12 @@ import './form.css'
 function ContactForm() {
   return (
     <form>
-      <label for="name">Name</label>
+      <label htmlFor="name">Name</label>
       <input type="text" id="name" required />
 
-      <label for="email">Email</label>
+      <label htmlFor="email">Email</label>
       <input type="text" id="email" required />
-      <label for="message">Message</label>
+      <label htmlFor="message">Message</label>
       <textarea
         name="message"
         id="message"
