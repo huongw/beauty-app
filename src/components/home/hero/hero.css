@@ -23,7 +23,7 @@
 #slogan {
   text-transform: capitalize;
   font-size: clamp(2rem, 4vw, 5rem);
-  line-height: clamp(3rem, 4vw, 5rem);
+  line-height: clamp(2rem, 4vw, 5rem);
   background-image: linear-gradient(45deg, #f3dc78, #af4261);
   -webkit-background-clip: text;
   background-clip: text;
