@@ -110,3 +110,9 @@
     padding-bottom: 50px;
   }
 }
+
+@media only screen and (max-height: 740px) {
+  .contact-container {
+    min-height: 90vh;
+  }
+}
