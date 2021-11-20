@@ -5,9 +5,9 @@ function MenuListItem(props) {
     <tr>
       <td>
         {title}<br />
-        <span class="description">{desc}</span>
+        <span className="description">{desc}</span>
       </td>
-      <td class="price">${price}</td>
+      <td className="price">${price}</td>
     </tr>
   );
 }

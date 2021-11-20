@@ -22,7 +22,7 @@ function MenuList(props) {
       <thead>
         <tr>
           <th>Style</th>
-          <th class="price">Price</th>
+          <th className="price">Price</th>
         </tr>
       </thead>
       <tbody>
