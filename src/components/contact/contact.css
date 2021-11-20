@@ -106,12 +106,6 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .contact-container {
-    padding: 0;
-  }
-}
-
 @media only screen and (max-width: 470px) {
   .contact {
     padding-bottom: 50px;
@@ -120,6 +114,6 @@
 
 @media only screen and (max-height: 1500px) and (max-width: 1000px) {
   .contact-container {
-    min-height: 95vh;
+    min-height: 90vh;
   }
 }
