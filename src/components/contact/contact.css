@@ -100,6 +100,10 @@
     flex-direction: column;
   }
 
+  .contact-container {
+    justify-content: flex-start;
+  }
+
   .contact-container .img-container .hand {
     display: none;
   }
