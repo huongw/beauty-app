@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function NavbarListItem(props) {
   const { path, name, style, openMenu, closeMenu } = props;
@@ -6,9 +6,9 @@ function NavbarListItem(props) {
   return (
     <>
       <li style={openMenu ? { animation: style } : null}>
-        <Link to={path} onClick={closeMenu}>
+        <NavLink to={path} onClick={closeMenu} exact>
           {name}
-        </Link>
+        </NavLink>
       </li>
     </>
   )

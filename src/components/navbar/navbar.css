@@ -44,3 +44,8 @@ nav {
 .changeColor {
   background-color: #e0d9c8;
 }
+
+a.active {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
