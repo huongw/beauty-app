@@ -16,9 +16,9 @@ function Menu() {
       </h1>
       <MenuButtonList active={active} handleDisplayMenu={(e) => setActive(e.target.dataset.target)}/>
       <div className="table-container">
-        <MenuList active={active} id="facials" name="Facial Care" data={data.facials} />
-        <MenuList active={active} id="lashes" name="Lash Care" data={data.lashes} />
-        <MenuList active={active} id="nails" name="Nail Care" data={data.nails} />
+        {active === "nails" && <MenuList id="nails" name="Nail Care" data={data.nails} />}
+        {active === "facials" && <MenuList id="facials" name="Facial Care" data={data.facials} />}
+        {active === "lashes" && <MenuList id="lashes" name="Lash Care" data={data.lashes} />}
       </div>
     </div>
   );

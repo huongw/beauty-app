@@ -33,11 +33,6 @@ caption {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto 20px;
-  display: none;
-}
-
-.table-content.active {
-  display: table;
 }
 
 thead tr {
