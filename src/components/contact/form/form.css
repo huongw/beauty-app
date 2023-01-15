@@ -5,6 +5,15 @@ form {
   flex-direction: column;
 }
 
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
 form button {
   background-color: #837150;
   color: azure;
