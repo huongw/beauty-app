@@ -1,7 +1,12 @@
 import MenuListItem from "./MenuListItem";
+import classNames from "classnames";
 
 function MenuList(props) {
-  const { data, name } = props;
+  const { data, name, id, active } = props;
+
+  const tableClass = classNames("table-content", {
+    "active": id === active
+  })
 
   const menuList = data.map((option) => {
     return (
@@ -15,7 +20,7 @@ function MenuList(props) {
   })
 
   return (
-    <table>
+    <table id={id} className={tableClass}>
       <caption>
         {name}
       </caption>

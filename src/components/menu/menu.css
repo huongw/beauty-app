@@ -27,15 +27,24 @@ caption {
   background-position: center;
 }
 
-table {
+.table-content {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto 20px;
+  display: none;
+}
+
+.table-content.active {
+  display: block;
 }
 
 thead tr {
   text-align: left;
   color: #837150;
+}
+
+td {
+  width: 100%;
 }
 
 .price {
@@ -46,4 +55,14 @@ thead tr {
 
 .description {
   color: #837150;
+}
+
+.button-container {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  min-width: 200px;
+  padding: 2vh 0;
 }
