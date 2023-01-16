@@ -10,11 +10,21 @@ export default function Carousel() {
   const settings = {
     infinite: true,
     dots: true,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     lazyLoad: true,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      }
+    ]
   };
 
   return (

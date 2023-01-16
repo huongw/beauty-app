@@ -1,8 +1,11 @@
 .slide-container {
   background-color: rgba(250, 250, 250, 0.5);
-  min-height: 35vh;
 }
 
 .slide-container h2 {
   padding: 20px;
+}
+
+.slick-dots {
+  background-color: rgba(250, 250, 250, 0.5);
 }
