@@ -17,7 +17,7 @@ export default function Carousel() {
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
