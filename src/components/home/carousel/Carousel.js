@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./carousel.css";
 import galleryData from '../../../data/galleryData';
 import { NavLink } from 'react-router-dom';
 
@@ -17,16 +18,19 @@ export default function Carousel() {
   };
 
   return (
-    <NavLink to={"/gallery"}>
-      <Slider {...settings}>
-        {
-          galleryData.map(img => {
-            return (
-              <img src={img.src} alt={img.alt}/>
-              )
-            })
-          }
-      </Slider>
-    </NavLink>
+    <div className="slide-container">
+      <h2>Featured</h2>
+        <NavLink to={"/gallery"}>
+          <Slider {...settings}>
+            {
+              galleryData.map(img => {
+                return (
+                  <img src={img.src} alt={img.alt}/>
+                  )
+                })
+              }
+          </Slider>
+        </NavLink>
+      </div>
   )
 }
