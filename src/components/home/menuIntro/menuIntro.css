@@ -4,10 +4,11 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  min-height: 90vh;
 }
 
 .menu-section h2 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
 }
 
