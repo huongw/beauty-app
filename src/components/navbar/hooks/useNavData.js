@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import classNames from 'classnames';
 
 
 function useNavData() {
@@ -15,16 +16,13 @@ function useNavData() {
     setOpenMenu(false)
   }
 
-  let navClass = 'nav-links';
-  let burgerClass = 'hamburger';
+  const navClass = classNames("nav-links", {
+    "nav-active": openMenu
+  })
 
-  if (openMenu) {
-    navClass += ' nav-active';
-    burgerClass += ' toggle';
-  } else {
-    navClass = 'nav-links'
-    burgerClass = 'hamburger';
-  }
+  const burgerClass = classNames("hamburger", {
+    "toggle": openMenu
+  })
 
   return { openMenuHandler, navClass, burgerClass, openMenu, closeMenu }
 }

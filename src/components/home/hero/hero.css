@@ -4,7 +4,7 @@
 }
 
 .welcome {
-  width: 50%;
+  width: 40%;
   padding-right: 20px;
 }
 
@@ -15,16 +15,17 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url("../../../images/hero-bg.jpg");
+  background-image: url("../../../images/hero.jpg");
   background-position: center;
   background-size: cover;
+  background-position: 50%;
 }
 
 #slogan {
   text-transform: capitalize;
   font-size: clamp(2rem, 4vw, 5rem);
   line-height: clamp(2rem, 4vw, 5rem);
-  background-image: linear-gradient(45deg, #f3dc78, #af4261);
+  background-image: linear-gradient(45deg, #f2e4a5, #dd93a8);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

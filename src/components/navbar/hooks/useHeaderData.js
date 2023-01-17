@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import classNames from 'classnames';
 
 function useHeaderData() {
   const [header, setHeader] = useState(false);
@@ -20,14 +21,11 @@ function useHeaderData() {
 
   }, [])
 
-  let headerScroll = 'scroll';
-
-  if (header) {
-    headerScroll += ' changeColor';
-  } else {
-    headerScroll = 'scroll';
-  }
-  return { headerScroll }
+  let headerClass = classNames("scroll", {
+    "changeColor": header
+  });
+  
+  return { headerClass }
 }
 
 export default useHeaderData

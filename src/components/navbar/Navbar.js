@@ -3,11 +3,11 @@ import { useHeaderData, useNavData, Hamburger, NavbarList } from './index';
 
 function Navbar() {
 
-  const { headerScroll } = useHeaderData();
+  const { headerClass } = useHeaderData();
   const { openMenuHandler, navClass, burgerClass, openMenu, closeMenu } = useNavData();
 
   return (
-    <header className={headerScroll}>
+    <header className={headerClass}>
       <nav>
         <h1 className="logo">LB</h1>
         <NavbarList
