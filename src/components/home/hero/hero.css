@@ -49,9 +49,9 @@
     width: 55%;
   }
   #slogan {
-    margin-bottom: 50vh;
+    margin-bottom: 40vh;
     font-size: 10vw;
-    line-height: 10vw;
+    line-height: 9vw;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -59,7 +59,7 @@
     width: 65%;
   }
   #slogan {
-    font-size: 15vw;
-    line-height: 15vw;
+    font-size: 14vw;
+    line-height: 12vw;
   }
 }
