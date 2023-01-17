@@ -1,8 +1,7 @@
 .hero {
   display: flex;
   align-items: center;
-  width: 99%;
-  margin: auto;
+  margin: 0 1.5vh;
 }
 
 .welcome {
