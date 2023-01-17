@@ -1,4 +1,8 @@
 .slide-container {
+  background-color: #e0d9c8;
+}
+
+.slick-slider {
   background-color: rgba(250, 250, 250, 0.5);
 }
 

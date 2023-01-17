@@ -1,13 +1,12 @@
 import './navbar.css';
-import { useHeaderData, useNavData, Hamburger, NavbarList } from './index';
+import { useNavData, Hamburger, NavbarList } from './index';
 
 function Navbar() {
 
-  const { headerClass } = useHeaderData();
   const { openMenuHandler, navClass, burgerClass, openMenu, closeMenu } = useNavData();
 
   return (
-    <header className={headerClass}>
+    <header className="scroll">
       <nav>
         <h1 className="logo">LB</h1>
         <NavbarList
