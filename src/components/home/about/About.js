@@ -1,5 +1,6 @@
 import golden_hour from '../../../images/golden-hour.jpg';
 import tan_girl from '../../../images/tan-girl.jpg';
+import hand from '../../../images/hand.png';
 import './about.css';
 
 function About() {
@@ -26,6 +27,7 @@ function About() {
             It was inspired by the beauty of the world and the strong women in our day-to-day
             lives. Our company strives on protecting our animals by using 100% vegan and
             cruelty-free based products to fit your every skin, nails, and lash needs.
+            <img className="hand" src={hand}/>
           </p>
         </div>
       </div>

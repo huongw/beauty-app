@@ -40,7 +40,7 @@ export default function Carousel() {
 
   return (
     <div className="slide-container">
-      <h2>Featured</h2>
+      <h2>Featured Nails</h2>
         <NavLink to={"/gallery"}>
           <Slider {...settings}>
             {
