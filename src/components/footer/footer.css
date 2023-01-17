@@ -19,7 +19,7 @@ footer h3::before {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%;
+  width: 30%;
   height: 5px;
   background-color: azure;
   border-radius: 50%;
@@ -60,6 +60,8 @@ footer h3::before {
 .newsletter input {
   margin-top: 5px;
   height: 30px;
+  border: 1px solid #837150;
+  border-radius: 0;
 }
 
 .copyright {

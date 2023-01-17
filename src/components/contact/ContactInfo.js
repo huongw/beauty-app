@@ -2,9 +2,7 @@ import contactData from '../../data/contactData';
 
 function ContactInfo() {
 
-  const available = contactData.available;
-  const address = contactData.address;
-  const inquiry = contactData.inquiry;
+  const {available, address, inquiry} = contactData;
 
   return (
     <>
