@@ -23,12 +23,42 @@
 
 #slogan {
   text-transform: capitalize;
-  font-size: clamp(2rem, 4vw, 5rem);
-  line-height: clamp(2rem, 4vw, 5rem);
+  font-size: clamp(2rem, 4vw, 6rem);
+  line-height: clamp(2rem, 4vw, 6rem);
   background-image: linear-gradient(45deg, #f2e4a5, #dd93a8);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(19, 18, 18, 0.3));
   filter: drop-shadow(5px 5px 5px rgba(19, 18, 18, 0.3));
+}
+
+@media only screen and (max-width: 1050px) {
+  .welcome {
+    width: 45%;
+  }
+  #slogan {
+    margin-bottom: 30vh;
+    font-size: 7vw;
+    line-height: 7vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .welcome {
+    width: 55%;
+  }
+  #slogan {
+    margin-bottom: 50vh;
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .welcome {
+    width: 65%;
+  }
+  #slogan {
+    font-size: 15vw;
+    line-height: 15vw;
+  }
 }
