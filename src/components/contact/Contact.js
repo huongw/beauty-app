@@ -1,11 +1,30 @@
+import { useState } from "react";
+import axios from "axios";
+
 import ContactInfo from "./ContactInfo";
 import ContactForm from "./form/ContactForm";
+import Confirm from "./Confirm";
 
 import MainText from "./MainText";
 import MainImages from "./MainImages";
 import './contact.css';
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [response, setResponse] = useState("")
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    axios.post('/', {name, email, message})
+    .then(res => {
+      setResponse(res.data.message)
+    })
+    .catch(err => console.log("error sending email", err))
+  }
+
   return (
     <section className="contact">
       <section className="contact-container">
@@ -16,7 +35,9 @@ function Contact() {
       <section className="contact-info">
         <ContactInfo />
       </section>
-      <ContactForm />
+      <div className="form-container">
+      {response ? <Confirm message={response}/> : <ContactForm name={name} email={email} message={message} onSubmit={handleSubmit} onChangeEmail={e => setEmail(e.target.value)} onChangeName={e => setName(e.target.value)} onChangeMessage={e => setMessage(e.target.value)}/>}
+      </div>
     </section>
   )
 }

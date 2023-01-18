@@ -1,13 +1,20 @@
 import './form.css'
 
-function ContactForm() {
-  return (
-    <form>
-      <label htmlFor="name">Name</label>
-      <input type="text" id="name" required />
+function ContactForm(props) {
+  const {name, email, message, onChangeEmail, onChangeName, onChangeMessage, onSubmit} = props;
 
+  return (
+    <form onSubmit={onSubmit}>
+      <label htmlFor="Name">Name</label>
+      <input type="text" id="Name" required 
+        value={name}
+        onChange={onChangeName}
+      />
       <label htmlFor="email">Email</label>
-      <input type="text" id="email" required />
+      <input type="email" id="email" required 
+        value={email}
+        onChange={onChangeEmail}
+      />
       <label htmlFor="message">Message</label>
       <textarea
         name="message"
@@ -15,6 +22,8 @@ function ContactForm() {
         cols="30"
         rows="10"
         required
+        value={message}
+        onChange={onChangeMessage}
       ></textarea>
       <button type="submit">Submit</button>
     </form>
