@@ -6,37 +6,38 @@ import galleryData from '../../../data/galleryData';
 import { NavLink } from 'react-router-dom';
 
 
-export default function Carousel() {
-  const settings = {
-    infinite: true,
-    dots: true,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    lazyLoad: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          initialSlide: 2
-        }
+const settings = {
+  infinite: true,
+  dots: true,
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  lazyLoad: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 4
       }
-    ]
-  };
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        initialSlide: 2
+      }
+    }
+  ]
+};
+
+export default function Carousel() {
 
   return (
     <div className="slide-container">
