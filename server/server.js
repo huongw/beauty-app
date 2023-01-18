@@ -28,8 +28,6 @@ transporter.verify((error) => {
 app.post("/", (req, res) => {
   const {name, email, message} = req.body;
 
-  console.log(email)
-
   const mailOptions = {
     from: email,
     to: process.env.EMAIL,
