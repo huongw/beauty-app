@@ -1,11 +1,10 @@
-import { Hero, About, MenuIntro, Carousel, TextAnimation } from './index';
+import { Hero, About, MenuIntro, Carousel } from './index';
 
 function Home() {
 
   return (
     <>
       <Hero />
-      <TextAnimation/>
       <About />
       <Carousel />
       <MenuIntro />
