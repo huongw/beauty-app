@@ -5,7 +5,6 @@ import "./carousel.css";
 import galleryData from '../../../data/galleryData';
 import { NavLink } from 'react-router-dom';
 
-
 const settings = {
   infinite: true,
   dots: true,

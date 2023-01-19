@@ -19,7 +19,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setBtnName("Sending...")
-    axios.post('/', {name, email, message})
+    axios.post(`${process.env.REACT_APP_BASE_URL}`, {name, email, message})
     .then(res => {
       setResponse(res.data.message)
     })
