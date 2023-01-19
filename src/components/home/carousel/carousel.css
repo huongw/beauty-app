@@ -2,14 +2,12 @@
   background-color: #e0d9c8;
 }
 
-.slide-container .slick-slider {
-  background-color: rgba(250, 250, 250, 0.5);
-}
-
 .slide-container h2 {
   padding: 20px;
 }
 
-.slick-dots {
-  background-color: rgba(250, 250, 250, 0.5);
+@media only screen and (max-width: 470px) {
+  .slide-container h2 {
+    padding-bottom: 10px;
+  }
 }
