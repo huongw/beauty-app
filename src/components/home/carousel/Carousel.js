@@ -47,7 +47,7 @@ export default function Carousel() {
             {
               galleryData.map(img => {
                 return (
-                  <img src={img.src} alt={img.alt}/>
+                  <img key={img.id} src={img.src} alt={img.alt}/>
                   )
                 })
               }
