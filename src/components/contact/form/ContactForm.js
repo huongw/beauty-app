@@ -1,7 +1,7 @@
 import './form.css'
 
 function ContactForm(props) {
-  const {name, email, message, onChangeEmail, onChangeName, onChangeMessage, onSubmit} = props;
+  const {name, email, message, onChangeEmail, onChangeName, onChangeMessage, onSubmit, button} = props;
 
   return (
     <form onSubmit={onSubmit}>
@@ -25,7 +25,7 @@ function ContactForm(props) {
         value={message}
         onChange={onChangeMessage}
       ></textarea>
-      <button type="submit">Submit</button>
+      <button type="submit">{button}</button>
     </form>
   )
 }

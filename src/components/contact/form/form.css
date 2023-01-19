@@ -21,6 +21,7 @@ textarea {
 input,
 textarea {
   outline: none;
+  border-radius: 0;
 }
 
 form button {
@@ -29,10 +30,16 @@ form button {
   outline: none;
   border: none;
   padding: 5px 0;
+  cursor: pointer;
+  transition: background-color .2s linear;
+}
+
+form button:hover {
+  background-color: rgb(153, 129, 86);
 }
 
 @media only screen and (max-width: 850px) {
-  form {
+  .form-container {
     width: 100%;
   }
 }
