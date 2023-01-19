@@ -14,6 +14,7 @@ const settings = {
   lazyLoad: true,
   autoplay: true,
   autoplaySpeed: 2000,
+  cssEase: "linear",
   responsive: [
     {
       breakpoint: 1500,
