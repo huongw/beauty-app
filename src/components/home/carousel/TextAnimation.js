@@ -6,27 +6,25 @@ import "./carousel.css";
 const settings = {
   infinite: true,
   dots: false,
-  slidesToShow: 7,
-  slidesToScroll: 1,
-  lazyLoad: true,
+  slidesToShow: 6,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 5000,
   cssEase: "linear",
-  speed: 2000,
-  pauseOnHover: false
+  speed: 5000,
+  pauseOnHover: false,
 }
 
 export default function TextAnimation() {
   return (
     <div className="text-animation-container">
     <Slider {...settings}>
-      <span className="text">Be a Goddess.</span>
+      <span className="text">Godess Energy.</span>
       <span className="text">Think Positive.</span>
       <span className="text">Be Sexy.</span>
-      <span className="text">Be a Goddess.</span>
+      <span className="text">Godess Energy.</span>
       <span className="text">Think Positive.</span>
       <span className="text">Be Sexy.</span>
-      <span className="text">Be a Goddess.</span>
+      <span className="text">Godess Energy.</span>
       <span className="text">Think Positive.</span>
       <span className="text">Be Sexy.</span>
     </Slider>
