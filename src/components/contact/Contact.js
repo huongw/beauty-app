@@ -19,7 +19,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setBtnName("Sending...")
-    axios.post(`/`, {name, email, message})
+    axios.post(`https://beauty-api.adaptable.app/`, {name, email, message})
     .then(res => {
       setResponse(res.data.message)
     })
