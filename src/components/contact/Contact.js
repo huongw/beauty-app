@@ -21,7 +21,6 @@ function Contact() {
     setBtnName("Sending...")
     axios.post("/", {name, email, message})
     .then(res => {
-      console.log(res.data.message)
       setResponse(res.data.message)
     })
     .catch(err => console.log("error sending email", err))
