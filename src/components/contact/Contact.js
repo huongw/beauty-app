@@ -25,7 +25,8 @@ function Contact() {
       message
     }
     
-    setBtnName("Sending...")
+    setBtnName("Sending...");
+
     axios.post("/", {...data})
     .then(res => {
       setResponse(res.data.message)
