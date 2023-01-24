@@ -7,7 +7,7 @@ function ContactForm(props) {
     <form onSubmit={onSubmit}>
       <label htmlFor="Name">Name</label>
       <input type="text" id="Name" required 
-        value={name[0].toUpperCase()}
+        value={name}
         onChange={onChangeName}
       />
       <label htmlFor="email">Email</label>
