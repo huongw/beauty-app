@@ -18,9 +18,15 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const capitalizedName = name[0].toUpperCase() + name.slice(1)
+
+    const data = {
+      name: name[0].toUpperCase() + name.slice(1),
+      email,
+      message
+    }
+    
     setBtnName("Sending...")
-    axios.post("/", {capitalizedName, email, message})
+    axios.post("/", {...data})
     .then(res => {
       setResponse(res.data.message)
     })
