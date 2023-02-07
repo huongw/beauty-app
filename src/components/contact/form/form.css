@@ -6,12 +6,10 @@ form {
 }
 
 .form-container {
-  width: 65%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 20vh;
-  padding-bottom: 80px;
 }
 
 textarea {
@@ -23,6 +21,7 @@ textarea {
   outline: none;
   border-radius: 0;
   border: 1px solid #837150;
+  padding: .5em;
 }
 
 form button {
@@ -33,6 +32,11 @@ form button {
   padding: 5px 0;
   cursor: pointer;
   transition: background-color .2s linear;
+}
+
+input {
+  margin-bottom: 1em;
+  min-height: 3vh;
 }
 
 form button:hover {

@@ -5,22 +5,22 @@ function ContactForm(props) {
 
   return (
     <form onSubmit={onSubmit}>
-      <label htmlFor="Name">Name:</label>
       <input type="text" id="Name" required 
         value={name}
         onChange={onChangeName}
+        placeholder="Name"
       />
-      <label htmlFor="email">Email:</label>
       <input type="email" id="email" required 
         value={email}
         onChange={onChangeEmail}
+        placeholder="Email"
       />
-      <label htmlFor="message">Message:</label>
       <textarea
         name="message"
         id="message"
         cols="30"
         rows="10"
+        placeholder="Write us a message"
         required
         value={message}
         onChange={onChangeMessage}

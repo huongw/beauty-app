@@ -15,7 +15,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
-  const [btnName, setBtnName] = useState("Submit");
+  const [btnName, setBtnName] = useState("Submit Your Message");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,10 +44,12 @@ function Contact() {
       <section className="contact-info">
         <ContactInfo />
       </section>
+      <div className="map-form-section">
       <div className="form-container">
       {response ? <Confirm message={response}/> : <ContactForm button={btnName} name={name} email={email} message={message} onSubmit={handleSubmit} onChangeEmail={e => setEmail(e.target.value)} onChangeName={e => setName(e.target.value)} onChangeMessage={e => setMessage(e.target.value)}/>}
       </div>
       <MapBox/>
+      </div>
     </section>
   )
 }

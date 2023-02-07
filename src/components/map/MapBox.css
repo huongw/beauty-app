@@ -1,4 +1,9 @@
 #mapbox {
-  height: 30vh;
-  width: 100vw;
+  flex: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  #mapbox {
+    min-height: 30vh;
+  }
 }
