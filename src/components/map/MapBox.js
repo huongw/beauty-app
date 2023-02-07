@@ -9,7 +9,7 @@ export default function MapBox() {
     const map = new mapboxgl.Map({
       container: 'mapbox',
       style: 'mapbox://styles/whitneyhuong/cldtj32e4000301mvljwpsduf',
-      center: [ -73.5512133030797,45.49959864192786 ],
+      center: [ -73.57107354269651, 45.49961551766191 ],
       zoom: 9
     });
   }, [])
