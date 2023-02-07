@@ -4,6 +4,7 @@ import axios from "axios";
 import ContactInfo from "./ContactInfo";
 import ContactForm from "./form/ContactForm";
 import Confirm from "./Confirm";
+import MapBox from "../map/MapBox";
 
 import MainText from "./MainText";
 import MainImages from "./MainImages";
@@ -40,13 +41,13 @@ function Contact() {
         <MainImages />
         <MainText />
       </section>
-
       <section className="contact-info">
         <ContactInfo />
       </section>
       <div className="form-container">
       {response ? <Confirm message={response}/> : <ContactForm button={btnName} name={name} email={email} message={message} onSubmit={handleSubmit} onChangeEmail={e => setEmail(e.target.value)} onChangeName={e => setName(e.target.value)} onChangeMessage={e => setMessage(e.target.value)}/>}
       </div>
+      <MapBox/>
     </section>
   )
 }
