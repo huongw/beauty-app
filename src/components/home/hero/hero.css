@@ -21,7 +21,7 @@
 }
 
 .slick-arrow {
-  display: none;
+  display: none !important;
 }
 
 .hero_bg::after {
