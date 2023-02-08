@@ -65,21 +65,23 @@
 }
 
 .shop-now {
-  border: .5em solid #fff;
+  border-radius: 25px;
+  border: 2px solid #fff;
   outline: 0;
   z-index: 1;
-  background-color: #e0d9c8;
+  background-color: #cf4d72;
   width: 50vw;
   height: 15vw;
   max-width: 200px;
   max-height: 50px;
+  font-size: 1em;
   cursor: pointer;
-  color: #000;
+  color: #fff;
   transition: .2s linear;
 }
 
 .shop-now:hover {
-  color: #837150;
+  background-color: #c67a90;
 }
 
 @media only screen and (max-width: 1500px) {
