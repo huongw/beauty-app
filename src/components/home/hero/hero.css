@@ -74,8 +74,8 @@
   max-width: 200px;
   max-height: 50px;
   cursor: pointer;
-  columns: #000;
-  transition: all .2s linear;
+  color: #000;
+  transition: .2s linear;
 }
 
 .shop-now:hover {
