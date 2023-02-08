@@ -37,8 +37,8 @@
 .headline {
   text-align: center;
   text-transform: capitalize;
-  font-size: clamp(2rem, 4vw, 6rem);
-  line-height: clamp(2rem, 4vw, 6rem);
+  font-size: clamp(2rem, 3vw, 5rem);
+  line-height: clamp(2rem, 3vw, 5rem);
   background-image: linear-gradient(45deg, #f2e4a5, #ea9cb2);
   -webkit-background-clip: text;
   background-clip: text;
@@ -48,7 +48,7 @@
   z-index: 1;
   width: 90%;
   margin-bottom: .5em;
-  min-height: 15%;
+  min-height: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,10 +82,10 @@
   color: #837150;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1500px) {
   .headline {
-    font-size: 6vw;
-    line-height: 6vw;
+    font-size: 5vw;
+    line-height: 5vw;
   }
 
   #slogan {
