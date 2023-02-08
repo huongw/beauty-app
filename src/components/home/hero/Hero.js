@@ -1,14 +1,18 @@
+import {motion, useScroll, useTransform} from "framer-motion/dist/framer-motion";
 import './hero.css';
 
 function Hero() {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], [0, -1000])
+
   return (
     <section className="hero">
       <div className="hero_bg">
-        <div className="welcome">
-          <h2 id="slogan">
-            Awaken your inner <br />goddess
-          </h2>
-        </div>
+          <motion.h2 id="slogan"
+            style={{ x: x }}
+          >
+            Awaken your inner goddess
+          </motion.h2>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   margin: 0 1.5vh;
+  overflow: hidden;
 }
 
 .welcome {
@@ -12,8 +13,8 @@
 .hero_bg {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
-  justify-content: center;
   width: 100%;
   height: 98.5vh;
   margin-bottom: 1.5vh;
@@ -21,18 +22,26 @@
   background-position: center;
   background-size: cover;
   background-position: 50%;
+  position: relative;
+}
+
+.hero_bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
 }
 
 #slogan {
   text-transform: capitalize;
-  font-size: clamp(2rem, 4vw, 6rem);
-  line-height: clamp(2rem, 4vw, 6rem);
-  background-image: linear-gradient(45deg, #f2e4a5, #dd93a8);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(19, 18, 18, 0.3));
-  filter: drop-shadow(5px 5px 5px rgba(19, 18, 18, 0.3));
+  font-size: 16em;
+  line-height: 1.2em;
+  white-space: nowrap;
+  color: #fff;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 1050px) {
