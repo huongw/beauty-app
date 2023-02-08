@@ -8,12 +8,14 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero_bg">
-          <motion.h2 id="slogan"
-            style={{ x: x }}
-          >
-            Awaken your inner goddess
-          </motion.h2>
+        <h2 className="headline">Discover Vegan products that will love your skin</h2>
+        <button className="shop-now">Shop Now</button>
       </div>
+      <motion.h3 id="slogan"
+        style={{ x: x }}
+      >
+        Awaken your inner goddess. Awaken your inner goddess.
+      </motion.h3>
     </section>
   );
 }
