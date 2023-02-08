@@ -3,7 +3,7 @@ import './hero.css';
 
 function Hero() {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [0, -1000])
+  const x = useTransform(scrollYProgress, [0, 1], [0, -600])
 
   return (
     <section className="hero">
