@@ -16,9 +16,12 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
   const [btnName, setBtnName] = useState("Submit Your Message");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setLoading(true)
 
     const data = {
       name: name[0].toUpperCase() + name.slice(1),
@@ -31,6 +34,7 @@ function Contact() {
     axios.post("/email", {...data})
     .then(res => {
       setResponse(res.data.message)
+      setLoading(false)
     })
     .catch(err => console.log("error sending email", err))
   }
@@ -46,7 +50,7 @@ function Contact() {
       </section>
       <div className="map-form-section">
       <div className="form-container">
-      {response ? <Confirm message={response}/> : <ContactForm button={btnName} name={name} email={email} message={message} onSubmit={handleSubmit} onChangeEmail={e => setEmail(e.target.value)} onChangeName={e => setName(e.target.value)} onChangeMessage={e => setMessage(e.target.value)}/>}
+      {response ? <Confirm message={response}/> : <ContactForm button={btnName} isLoading={loading} name={name} email={email} message={message} onSubmit={handleSubmit} onEmailChange={e => setEmail(e.target.value)} onNameChange={e => setName(e.target.value)} onMessageChange={e => setMessage(e.target.value)}/>}
       </div>
       <MapBox/>
       </div>

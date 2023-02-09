@@ -1,18 +1,19 @@
 import './form.css'
 
 function ContactForm(props) {
-  const {name, email, message, onChangeEmail, onChangeName, onChangeMessage, onSubmit, button} = props;
+  const {name, email, message, onEmailChange, onNameChange, onMessageChange, onSubmit, button, isLoading} = props;
+  console.log(isLoading)
 
   return (
     <form onSubmit={onSubmit}>
       <input type="text" id="Name" required 
         value={name}
-        onChange={onChangeName}
+        onChange={onNameChange}
         placeholder="Name"
       />
       <input type="email" id="email" required 
         value={email}
-        onChange={onChangeEmail}
+        onChange={onEmailChange}
         placeholder="Email"
       />
       <textarea
@@ -23,9 +24,9 @@ function ContactForm(props) {
         placeholder="Write us a message"
         required
         value={message}
-        onChange={onChangeMessage}
+        onChange={onMessageChange}
       ></textarea>
-      <button type="submit">{button}</button>
+      <button type="submit" disabled={isLoading}>{button}</button>
     </form>
   )
 }
