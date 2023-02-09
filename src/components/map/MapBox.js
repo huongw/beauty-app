@@ -12,6 +12,11 @@ export default function MapBox() {
       center: [ -73.57107354269651, 45.49961551766191 ],
       zoom: 9
     });
+
+    const marker = new mapboxgl.Marker()
+    .setLngLat([ -73.57107354269651, 45.49961551766191 ])
+    .addTo(map);
+    
   }, [])
 
   return <div id="mapbox"></div>
