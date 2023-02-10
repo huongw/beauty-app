@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-height: 97vh;
+  min-height: 100vh;
 }
 
 .menu-section h2 {
