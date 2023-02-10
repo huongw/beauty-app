@@ -1,7 +1,7 @@
 import galleryData from '../../data/galleryData';
 import GalleryListItem from './GalleryListItem';
 
-function GalleryList() {
+function GalleryList(props) {
 
   const images = galleryData.map((image) => {
     return (
@@ -9,6 +9,7 @@ function GalleryList() {
         key={image.id}
         src={image.src}
         alt={image.alt}
+        handleShowModal={props.handleShowModal}
       />
     )
   })
