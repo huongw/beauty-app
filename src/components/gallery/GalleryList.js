@@ -15,9 +15,9 @@ function GalleryList(props) {
   })
 
   return (
-    <div className="gallery-container">
+    <>
       {images}
-    </div>
+    </>
   );
 }
 

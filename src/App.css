@@ -12,6 +12,11 @@ body {
   font-family: "DM Serif Display", serif;
 }
 
+body.display-img {
+  overflow: hidden;
+  position: relative;
+}
+
 .container {
   padding: 100px 0 80px;
 }

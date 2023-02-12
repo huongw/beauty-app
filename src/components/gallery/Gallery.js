@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Popup from './Popup';
 
 import GalleryList from "./GalleryList";
@@ -8,6 +8,11 @@ import flower from '../../images/flower.png';
 function Gallery() {
   const [showModal, setShowModal] = useState(false);
   const [details, setDetails] = useState({});
+
+  useEffect(() => {
+    document.body.classList.toggle("display-img", showModal)
+    
+  }, [showModal])
 
   function handleShowModal(imgSrc, alt) {
     setShowModal(!showModal)
@@ -25,7 +30,9 @@ function Gallery() {
         nail artist Whitney. All products are used with our vegan and cruelty-free
         nail polishes by Luxio.
       </p>
-      <GalleryList handleShowModal={handleShowModal}/>
+      <div className="gallery-container">
+        <GalleryList handleShowModal={handleShowModal}/>
+      </div>
 
       {showModal && <Popup details={details} onClick={() => setShowModal(!showModal)}/>}
     </div>
