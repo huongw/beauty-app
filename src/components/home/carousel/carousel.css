@@ -2,6 +2,7 @@
   background-color: #e0d9c8;
   display: flex;
   flex-direction: column;
+  margin: 0 1.5vh;
 }
 
 .slide-container h2 {
