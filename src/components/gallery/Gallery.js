@@ -10,7 +10,13 @@ function Gallery() {
   const [details, setDetails] = useState({});
 
   useEffect(() => {
-    document.body.classList.toggle("display-img", showModal)
+    if (showModal) {
+      document.body.classList.add("display-img");
+    }
+    
+    return () => {
+      document.body.classList.remove("display-img");
+    }
     
   }, [showModal])
 
