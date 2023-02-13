@@ -45,18 +45,6 @@ a {
   text-decoration: none;
 }
 
-.navigation {
-  background: none;
-  border: 0;
-  outline: 0;
-  font-size: 15px;
-  cursor: pointer;
-  color: #837150;
-  text-decoration: underline;
-  text-align: center;
-  transition: color .2s linear;
-}
-
 .navigation:hover {
   color: #393124;
 }

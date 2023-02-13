@@ -3,8 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./carousel.css";
 import galleryData from '../../../data/galleryData';
-import { NavLink } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import Button from "../../button/Button";
 
 const settings = {
   infinite: true,
@@ -46,12 +45,6 @@ const settings = {
 };
 
 export default function Carousel() {
-  const navigate = useNavigate();
-
-  const navigateToGallery = () => {
-    navigate('/gallery');
-  };
-
   return (
     <div className="slide-container">
       <h2>
@@ -66,7 +59,7 @@ export default function Carousel() {
               })
             }
         </Slider>
-        <button className="navigation" onClick={navigateToGallery}>View Our Gallery</button>
+        <Button navigateToPage="/gallery" name="Gallery"/>
       </div>
   )
 }
