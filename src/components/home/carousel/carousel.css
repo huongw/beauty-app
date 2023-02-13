@@ -5,8 +5,18 @@
 }
 
 .slide-container h2 {
-  margin: 5vh 1.5vh 0;
+  margin: 5vh 1.5vh 1.5vh;
   font-size: 45px;
+  position: relative;
+}
+.slide-container h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
 }
 
 .slick-slider {
