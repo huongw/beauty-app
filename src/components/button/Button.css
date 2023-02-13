@@ -7,5 +7,7 @@
   color: #837150;
   text-decoration: underline;
   text-align: center;
+  width: 200px;
+  margin: auto;
   transition: color .2s linear;
 }
