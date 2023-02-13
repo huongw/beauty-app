@@ -7,10 +7,15 @@ import green_blob from '../../../images/bg-blobs/green-dots-top.png';
 
 
 import './menuIntro.css';
-import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 
 function MenuIntro() {
+  const navigate = useNavigate();
+
+  const navigateToMenu = () => {
+    navigate('/menu');
+  };
+
   return (
     <section className="menu-section">
       <h2>
@@ -46,11 +51,8 @@ function MenuIntro() {
         <p>
           *Our services are 100% customizable to your needs.
         </p>
-        <Link to="/menu" className="menu-link">
-          Our Menu
-        </Link>
+        <button onClick={navigateToMenu} className="navigation">View Our Menu</button>
       </div>
-
     </section>
 
   );

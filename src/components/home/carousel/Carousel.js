@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./carousel.css";
 import galleryData from '../../../data/galleryData';
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const settings = {
   infinite: true,
@@ -33,26 +34,39 @@ const settings = {
         slidesToShow: 2,
         initialSlide: 2
       }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1,
+        initialSlide: 1
+      }
     }
   ]
 };
 
 export default function Carousel() {
+  const navigate = useNavigate();
+
+  const navigateToGallery = () => {
+    navigate('/gallery');
+  };
 
   return (
     <div className="slide-container">
-      <h2>Featured Nails</h2>
-        <NavLink to={"/gallery"}>
-          <Slider {...settings}>
-            {
-              galleryData.map(img => {
-                return (
-                  <img key={img.id} src={img.src} alt={img.alt}/>
-                  )
-                })
-              }
-          </Slider>
-        </NavLink>
+      <h2>
+        Featured Nails
+      </h2>
+        <Slider {...settings}>
+          {
+            galleryData.map(img => {
+              return (
+                <img key={img.id} src={img.src} alt={img.alt}/>
+                )
+              })
+            }
+        </Slider>
+        <button className="navigation" onClick={navigateToGallery}>View Our Gallery</button>
       </div>
   )
 }

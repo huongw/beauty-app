@@ -65,7 +65,7 @@
   transition: all 2s cubic-bezier(0.165,0.84,0.44,1);
 }
 
-.shop-now {
+.book-now {
   border-radius: 25px;
   border: 2px solid #fff;
   outline: 0;
@@ -81,7 +81,7 @@
   transition: .2s linear;
 }
 
-.shop-now:hover {
+.book-now:hover {
   background-color: #c67a90;
 }
 

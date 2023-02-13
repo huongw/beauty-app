@@ -1,13 +1,19 @@
 .slide-container {
   background-color: #e0d9c8;
+  display: flex;
+  flex-direction: column;
 }
 
 .slide-container h2 {
-  padding: 20px;
+  margin: 2vh 1.5vh 0;
 }
 
-@media only screen and (max-width: 470px) {
+.slick-slider {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 400px) {
   .slide-container h2 {
-    padding-bottom: 10px;
+    text-align: center;
   }
 }
