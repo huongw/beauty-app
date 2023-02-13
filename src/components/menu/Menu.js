@@ -10,10 +10,12 @@ function Menu() {
 
   return (
     <div className="menu-container container">
-      <h1>
-        Menu
+      <div className='menu-banner-bg'>
+        <h1>
+          Our Menu
+        </h1>
         <img className="flower" src={flower} alt="" />
-      </h1>
+      </div>
       <MenuButtonList active={active} handleDisplayMenu={(e) => setActive(e.target.dataset.target)}/>
       <div className="table-container">
         {active === "nails" && <MenuList id="nails" name="Nail Care" data={data.nails} />}
