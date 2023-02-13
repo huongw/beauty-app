@@ -5,13 +5,19 @@
 }
 
 .slide-container h2 {
-  margin: 2vh 1.5vh 0;
+  margin: 5vh 1.5vh 0;
+  font-size: 45px;
 }
 
 .slick-slider {
   margin-bottom: 3rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .slide-container h2 {
+    font-size: 35px;
+  }
+}
 @media only screen and (max-width: 400px) {
   .slide-container h2 {
     text-align: center;
