@@ -1,17 +1,22 @@
 .slide-container {
-  background-color: #e0d9c8;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  margin: 0 1.5vh;
+  padding-bottom: 50px;
+  margin-bottom: 1.5vh;
 }
 
 .slide-container h2 {
-  margin: 5vh 1.5vh 1vh;
+  margin: 1.5vh;
   font-size: 45px;
 }
 
 .slick-slider {
   margin-bottom: 3rem;
+}
+
+.slide-container + footer h3::before {
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {

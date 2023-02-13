@@ -6,8 +6,8 @@ function Home() {
     <>
       <Hero />
       <About />
-      <Carousel />
       <MenuIntro />
+      <Carousel />
     </>
   );
 }
