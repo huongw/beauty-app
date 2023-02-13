@@ -8,7 +8,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero_bg">
-        <h2 className="headline">Discover Vegan products that will love your skin</h2>
+        <h2 className="headline">Rejuvenate Your Skin Glow with Luna Beaute</h2>
         <button className="book-now">Book Appointment</button>
       </div>
       <motion.h3 id="slogan"
